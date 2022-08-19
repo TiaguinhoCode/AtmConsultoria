@@ -11,6 +11,7 @@ class _TelaContatoState extends State<TelaContato> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       appBar: AppBar(title: Text("Contato"), backgroundColor: Colors.green),
       body: Container(
         margin: EdgeInsets.only(top: 25, left: 20),

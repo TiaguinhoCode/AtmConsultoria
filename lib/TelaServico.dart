@@ -13,6 +13,7 @@ class _TelaServicoState extends State<TelaServico> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       appBar: AppBar(
         title: Text("Serviços"),
         backgroundColor: Colors.green,

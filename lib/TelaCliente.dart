@@ -11,6 +11,7 @@ class _TelaClienteState extends State<TelaCliente> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       appBar: AppBar(
         title: Text("Cliente"),
         backgroundColor: Colors.green,

@@ -11,6 +11,7 @@ class _TelaEmpresaState extends State<TelaEmpresa> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+        backgroundColor: Colors.white,
         appBar: AppBar(
           title: Text("Sobre Empresa"),
           backgroundColor: Colors.green,
