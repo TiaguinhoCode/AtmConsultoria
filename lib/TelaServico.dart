@@ -29,6 +29,7 @@ class _TelaServicoState extends State<TelaServico> {
               children: [
                 Image.asset(
                   "images/detalhe_servico.png",
+                  fit: BoxFit.contain,
                   height: 80,
                 ),
                 Padding(padding: EdgeInsets.only(left: 15)),

@@ -25,8 +25,10 @@ class _TelaEmpresaState extends State<TelaEmpresa> {
                   children: [
                     Image.asset(
                       "images/detalhe_empresa.png",
-                      height: 100,
+                      fit: BoxFit.contain,
+                      height: 70,
                     ),
+                    Padding(padding: EdgeInsets.only(left: 10)),
                     Text(
                       "Sobre a empresa",
                       style: TextStyle(
