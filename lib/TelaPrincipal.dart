@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:atmconsultoria/TelaEmpresa.dart';
 import 'package:atmconsultoria/TelaServico.dart';
 import 'package:atmconsultoria/TelaCliente.dart';
+import 'package:atmconsultoria/TelaContato.dart';
 
 class TelaPrincipal extends StatefulWidget {
   const TelaPrincipal({Key? key}) : super(key: key);
@@ -78,9 +79,15 @@ class _TelaPrincipalState extends State<TelaPrincipal> {
                     height: 150,
                   ),
                 ),
-                Image.asset(
-                  "images/menu_contato.png",
-                  height: 150,
+                GestureDetector(
+                  onTap: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => TelaContato()));
+                  },
+                  child: Image.asset(
+                    "images/menu_contato.png",
+                    height: 150,
+                  ),
                 )
               ],
             ),
