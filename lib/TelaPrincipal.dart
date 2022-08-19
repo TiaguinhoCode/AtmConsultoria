@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:atmconsultoria/TelaEmpresa.dart';
+import 'package:atmconsultoria/TelaServico.dart';
 
 class TelaPrincipal extends StatefulWidget {
   const TelaPrincipal({Key? key}) : super(key: key);
@@ -47,9 +48,15 @@ class _TelaPrincipalState extends State<TelaPrincipal> {
                     height: 150,
                   ),
                 ),
-                Image.asset(
-                  "images/menu_servico.png",
-                  height: 150,
+                GestureDetector(
+                  onTap: () {
+                    Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => TelaServico()));
+                  },
+                  child: Image.asset(
+                    "images/menu_servico.png",
+                    height: 150,
+                  ),
                 ),
               ],
             ),
